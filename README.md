@@ -1,4 +1,4 @@
-# AsianPinay.com Download Link Generator (Chrome Extension) via yt-dlp
+# Chrome Extension: AsianPinay Download Link Generator via yt-dlp (asianpinay.com, asianpinay.to)
 
 This guide provides step-by-step instructions on how to install and load the Chrome extension from this repository locally on your Chrome browser.
 
