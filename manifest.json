@@ -1,8 +1,9 @@
  {
     "manifest_version": 3,
-    "name": "AsianPinay + yt-dlp",
-    "description": "AsianPinay + yt-dlp download link generator",
-    "version": "1.0",
+    "name": "AsianPinay.com Download Link Generator",
+    "short_name": "asianpinay.com-downloader",
+    "description": "AsianPinay.com Download Link Generator (Chrome Extension) via yt-dlp",
+    "version": "1.1",
     "author": "https://github.com/pinay-creator",
     "icons": {
         "16": "images/icon.png",
@@ -20,6 +21,7 @@
     ],
     "host_permissions": [
         "https://*.asianpinay.com/*",
+        "https://*.asianpinay.to/*",
         "https://*.xtremestream.xyz/*"
     ],
     "background": {
@@ -29,13 +31,14 @@
         {
             "matches": [
                 "https://*.asianpinay.com/*",
+                "https://*.asianpinay.to/*",
                 "https://*.xtremestream.xyz/*"
             ],
             "js": ["content.js"]
         }
     ],
     "action": {
-        "default_popup": "popup.html",
+        "default_popup": "popup/popup.html",
         "default_icon": {
             "16": "images/icon.png",
             "32": "images/icon.png",

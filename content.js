@@ -1,7 +1,19 @@
 chrome.runtime.onMessage.addListener((request, sender, sendResponse) => {
-    if (request.type === "getDocumentTitle") {
-        const title = document.title;
-        sendResponse({ title: title });
+
+    /**
+     * Get response body of video source
+     * Request from service worker
+     */
+    if (request.type === 'fetchResponseBody') {
+        fetch(request.url)
+            .then(response => response.text())
+            .then(body => {
+                sendResponse({ body: body });
+            })
+            .catch(error => {
+                console.error('Failed to fetch the video response body:', error);
+                sendResponse({ body: null });
+            });
         return true;
     }
 });
