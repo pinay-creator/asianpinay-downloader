@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AsianPinay + yt-dlp</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="container">
+    <div class="row">
+      <img alt="asianpinay-logo" class="asianpinay-img" src="../images/asianpinay-logo.png" />
+      <span class="plus-emoji">➕</span>
+      <img alt="yt-dlp-logo" class="yt-dlp-img" src="../images/yt-dlp-logo.png" />
+    </div>
+    <div class="row dropdown-container">
+      <label for="quality">Select Video Quality:</label>
+      <select id="quality">
+        <option value="">-</option>
+      </select>
+    </div>
+    <div class="row data-container">
+      <textarea id="data" readonly></textarea>
+    </div>
+    <div class="row">
+      <button id="copyButton" class="copy-button" disabled>Copy</button>
+    </div>
+  </div>
+  <div class="footnote">
+    <p>
+      Instructions and source code: <br>
+      <a href="https://github.com/pinay-creator/asianpinay.com-downloader.git" target="_blank">https://github.com/pinay-creator/asianpinay.com-downloader.git</a>
+    </p>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>
