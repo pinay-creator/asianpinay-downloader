@@ -13,7 +13,7 @@ This guide provides step-by-step instructions on how to install and load the Chr
    - To download: Click on the green `Code` button at the top of this repository page, then click `Download ZIP`.
    - To clone using Git:
      ```bash
-     git clone https://github.com/pinay-creator/asianpinay.com-download.git
+     git clone https://github.com/pinay-creator/asianpinay-downloader.git
      ```
 2. If you downloaded the ZIP file, unzip it.
 
